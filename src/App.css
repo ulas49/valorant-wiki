@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ff4655;
+ 
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  padding: 0 100px;
+}
+
+header .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #ff4655;
+}
+
+
+header .brand img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+header nav .navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff4655;
+  height: 100%;
+
+}
+
+ header nav .navList .navItem .navLink {
+  margin-right: 20px;
+  color: #ff4655;
+  font-size: 2rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+
+} 
+
+header nav .navList .navItem .curLink {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 2rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #ff4655;
+} 
+
+
+ header nav .navList .navItem .navLink:hover {
+ background-color: #ff4655;
+ color: #fff;
+} 
+
+.agentList {
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  
+} 
+
+
+.agentCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3); 
+  /* background-color: #fff; */
+}
+
+.agentHeader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.agentHeader h3{
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 10px 0 ;
+}
+
+.agentCard img{
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+
+
+.agentInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.agentRole{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 4px 15px;
+  border-radius: 10px;
+  background-color: #ff4655;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.7); 
+}
+
+.agentAbility{
+  display: flex;
+  margin-top: 10px;
+}
+
+.agentAbility p {
+background-color: rgb(80,80,253);
+color: #fff;
+font-size: 0.7rem;
+padding: 5px 10px;
+border-radius: 10px;
+margin-right: 5px;
+
+}
+
+.registerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.registerForm{
+    background-color: white;
+    padding: 0px 60px;
+    border-radius: 10px;
+}
+
+.registerH1{
+    color: black;
+    text-align: center;
+   
+
+}
+
+.registerButton{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+   background-color: rgba(128, 0, 128, 0.671);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+.formInput{
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+input{
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+
+label{
+  font-size: 12px;
+  color: gray;
+}
+
+span{
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"]{
+  border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span{
+  display: block;
+}
+
+.sign{
+  color: blue;
+  text-decoration:underline;
+  font-size: 1.1rem;
+}
+
+
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+ 
+}
+
+.wrapper {
+  width: 60%;
+  height: 75%;
+  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #fff;
+
+}
+
+
+.left,.right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.or{
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  padding: 10px;
+  color: gray;
+  background-color: white;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.line{
+  width: 0.5px;
+  height: 70%;
+  background-color: lightgray;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+}
+
+.loginButton{
+  width: 150px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.google{
+  background-color: #df4930;
+}
+.facebook{
+  background-color: #507cc0;
+}
+.github{
+  background-color: black;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.loginInput{
+  width: 200px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.submit{
+  width: 200px;
+  background-color: rgba(128, 0, 128, 0.671);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.loginTitle{
+  position: absolute;
+  top: 150px;
+  color:rgb(51, 34, 34);
+  margin-top: 20px;
+
+}
+
+.Warning{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  
+}
+
+.register{
+  color: blue;
+  text-decoration:underline;
+  font-size: 1.1rem;
+}
+
+.regP{
+  margin-top: 10px;
+}
+
+.mapCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3); 
+  
+}
+
+.mapCard img {
+
+ height: 450px;
+ width: 600px;
+ 
+
+}
+
+.mapName{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.mapList{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.mapCor{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(255,255,255,0.6);
+  
+}
+
+.mapInfo{
+  position: relative;
+}
+
+.weaponCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  /* background-color: #fff; */
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3); 
+  
+}
+
+.weaponList{
+ 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  
+}
+
+.weaponCard img{
+  
+    width: 300px;
+    height: 100px;
+    margin: 20px auto;
+  
+
+}
+
+
+.valoImg{
+ max-width: 100%;
+ height: auto;
+ 
+}
