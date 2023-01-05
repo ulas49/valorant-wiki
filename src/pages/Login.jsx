@@ -64,8 +64,8 @@ export default function Login() {
                 setUser(true)
               
               
-               // history("/details")
-               history("/")
+               history("/details")
+               
                }
 
             }
