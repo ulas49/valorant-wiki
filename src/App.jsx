@@ -9,6 +9,8 @@ import Login from './pages/Login'
 import Home from './pages/Home'
 import { useEffect } from 'react'
 import { useAuth } from './context/AuthContext'
+import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -27,7 +29,7 @@ setUser(JSON.parse(localStorage.getItem("user_login")))
   return (
     <BrowserRouter>
      
-
+    <ToastContainer/>
   
     <Header/> 
 

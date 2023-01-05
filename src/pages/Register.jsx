@@ -1,6 +1,10 @@
 import {useState} from 'react'
 import FormInput from '../components/Form/FormInput';
 import {Link,useNavigate} from 'react-router-dom'
+import {toast} from 'react-toastify'
+
+
+
 
 export default function Register() {
    
@@ -114,8 +118,11 @@ export default function Register() {
 
 
            /* localStorage.setItem("user",JSON.stringify([...data,values])); */
-           alert("succesfully submitted")
+          // alert("succesfully submitted")
+            toast.success('succesfully submitted',{
+              autoClose: 3000,
 
+            })
            history123("/login")
 
         }
@@ -127,6 +134,7 @@ export default function Register() {
 
     return (
         <>
+        
 <div className="registerDiv">
       <form  className='registerForm' onSubmit={handleSubmit}>
         <h1 className='registerH1'>Register</h1>
